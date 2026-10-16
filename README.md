@@ -1,58 +1,123 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<div align="center">
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+# WASL
 
-## About Laravel
+**حلقة الوصل بين أهل الخير والمؤسسات الخيرية**
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+منصة رقمية تجمع المؤسسات الخيرية في مكان واحد، وتسهّل الوصول إليها ودعمها بثقة
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+![Laravel](https://img.shields.io/badge/Laravel-13-FF2D20?logo=laravel&logoColor=white)
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)
+![Inertia.js](https://img.shields.io/badge/Inertia.js-3-9553E9?logo=inertia&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss&logoColor=white)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+</div>
 
-## Learning Laravel
+## عن المنصة
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+يتوزّع العمل الخيري اليوم بين صفحات التواصل الاجتماعي والمواقع المتفرقة ومجموعات المراسلة، فيجد من يريد المساعدة صعوبة في معرفة المؤسسات العاملة حوله، وما تحتاجه فعلاً، وأيّها جدير بثقته. وفي المقابل، تبذل المؤسسات، ولا سيما الصغيرة منها، جهداً كبيراً لتعرّف بنفسها وتصل إلى داعمين جدد.
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+تهدف منصة **WASL** إلى جمع هذه المؤسسات في مكان واحد: صفحة تعريفية لكل مؤسسة تعرض رسالتها ومجالات عملها واحتياجاتها، ودليل يتيح للزائر أن يبحث ويقارن ثم يختار الجهة التي يريد دعمها، ومراجعة تتولاها إدارة المنصة للتحقق من المؤسسات قبل ظهورها، حفاظاً على ثقة الجميع.
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+## لمن هذه المنصة؟
 
-## Agentic Development
+- **المتبرّعون والمتطوّعون:** مرجع واحد موثوق يعرّفهم بالمؤسسات واحتياجاتها الفعلية، بدل البحث المتفرّق بين الصفحات.
+- **المؤسسات الخيرية:** حضور واضح أمام شريحة أوسع من الداعمين، ومساحة لعرض مشاريعها واحتياجاتها.
+- **إدارة المنصة:** أدوات لمراجعة طلبات الانضمام والتحقق من المؤسسات والحفاظ على موثوقية المحتوى.
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+## حالة المشروع
 
-```bash
-composer require laravel/boost --dev
+المشروع في مرحلة التأسيس، وهذا ما أُنجز حتى الآن وما هو قادم:
 
-php artisan boost:install
-```
+- [x] إنشاء الحسابات وتسجيل الدخول والخروج
+- [x] صلاحيات تفرّق بين المستخدم ومدير المنصة
+- [x] لوحة تحكم أولية للمستخدم وأخرى مستقلة للإدارة
+- [ ] دليل المؤسسات مع البحث والتصفية حسب المجال والمنطقة
+- [ ] صفحة تعريفية لكل مؤسسة
+- [ ] طلبات انضمام المؤسسات ومراجعتها من الإدارة
+- [ ] نشر الحملات والاحتياجات ومتابعتها
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+## التقنيات المستخدمة
 
-## Contributing
+- الواجهة الخلفية: Laravel 13
+- الواجهة الأمامية: React 19 مع TypeScript
+- الربط بين الطرفين: Inertia.js 3، لبناء تطبيق بصفحة واحدة دون واجهة API منفصلة
+- التنسيق: Tailwind CSS 4
+- أداة البناء: Vite
+- قاعدة البيانات: MySQL
+- الاختبارات: Pest
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## التشغيل محلياً
 
-## Code of Conduct
+### المتطلبات
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+- لغة PHP بالإصدار 8.3 أو أحدث، ومدير الحزم Composer
+- بيئة Node.js بالإصدار 20.19 أو أحدث، ومعها npm
+- خادم قاعدة بيانات MySQL
 
-## Security Vulnerabilities
+### خطوات التثبيت
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+1. انسخ المستودع وادخل إلى مجلده:
 
-## License
+   ```bash
+   git clone https://github.com/WesamAwad/WASL_APP.git
+   cd WASL_APP
+   ```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+2. أنشئ ملف الإعدادات من النسخة النموذجية:
+
+   ```bash
+   cp .env.example .env
+   ```
+
+3. افتح ملف الإعدادات الجديد وعدّل اسم التطبيق وبيانات الاتصال بقاعدة البيانات، مثلاً:
+
+   ```dotenv
+   APP_NAME=WASL
+   DB_DATABASE=wasl
+   DB_USERNAME=root
+   DB_PASSWORD=
+   ```
+
+4. جهّز المشروع بأمر واحد يثبّت الحزم، ويولّد مفتاح التطبيق، ويُنشئ جداول قاعدة البيانات، ويبني ملفات الواجهة:
+
+   ```bash
+   composer run setup
+   ```
+
+5. أضف بيانات تجريبية (اختياري):
+
+   ```bash
+   php artisan db:seed
+   ```
+
+6. شغّل بيئة التطوير، وهي تشغّل خادم Laravel ومعالج الطوابير وخادم Vite معاً:
+
+   ```bash
+   composer run dev
+   ```
+
+   ثم افتح المتصفح على http://localhost:8000
+
+### الحسابات التجريبية
+
+ينشئ الأمر `php artisan db:seed` حسابين للتجربة، وكلمة المرور لكليهما `password`:
+
+- مدير المنصة: `admin@example.com`
+- مستخدم عادي: `test@example.com`
+
+هذه الحسابات مخصّصة للتطوير المحلي فقط، فلا تشغّل هذا الأمر على خادم الإنتاج.
+
+## الاختبارات وجودة الكود
+
+- تشغيل الاختبارات: `php artisan test`
+- تنسيق كود PHP: `vendor/bin/pint`
+- فحص أنواع TypeScript: `npm run types`
+
+## المساهمة
+
+نرحّب بكل مساهمة تقرّب الفكرة من الناس. قبل أن تفتح طلب دمج (Pull Request):
+
+1. أنشئ فرعاً مستقلاً لتعديلك انطلاقاً من `main`.
+2. أضف اختبارات تغطي السلوك الجديد، وتأكد أن جميع الاختبارات ناجحة.
+3. شغّل `vendor/bin/pint` لتنسيق الكود قبل الإرسال.
